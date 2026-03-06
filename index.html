@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>AloneAbove — Premium Shop</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="user-bar" id="user-bar">
+    <div class="user-info">
+      <img src="" id="user-photo" class="user-photo" alt="Avatar" style="display:none;">
+      <div class="user-text">
+        <span class="welcome-msg">WELCOME BACK,</span>
+        <span id="user-name" class="user-name">GUEST</span>
+      </div>
+    </div>
+    <div class="status-badge">PREMIUM ACCESS</div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="logo-wordmark">ALONE<span class="accent">ABOVE</span></span>
+      <div class="header-meta">
+        <span class="header-tagline">DROP 001</span>
+        <div class="live-indicator">LIVE</div>
+      </div>
+    </div>
+    <div class="header-line"></div>
+  </header>
+
+  <main>
+    <section class="section-label">
+      <span>— КАТАЛОГ ИЗДЕЛИЙ</span>
+      <span id="item-count" class="item-count">0 позиций</span>
+    </section>
+
+    <div id="product-grid" class="product-grid">
+      <div class="skeleton-card"></div>
+      <div class="skeleton-card"></div>
+    </div>
+  </main>
+
+  <div id="toast" class="toast-container"></div>
+
+  <script id="products-data" type="application/json">
+    [
+      {"id": 1, "name": "PHANTOM HOODIE", "price": 8500, "description": "Heavyweight cotton, oversized fit, signature embroidery.", "emoji": "🥷"},
+      {"id": 2, "name": "VIRTUAL CARGO", "price": 12000, "description": "Tech-wear inspired trousers with 8 functional pockets.", "emoji": "⛓️"}
+    ]
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
